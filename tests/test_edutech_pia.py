@@ -1,5 +1,6 @@
+
 import pytest
-from unittest.mock import Mock
+
 
 # --- DOMINIO SIMULADO DE EDUTECH ACADEMY ---
 class EvaluacionFueraDeRango(Exception): pass
