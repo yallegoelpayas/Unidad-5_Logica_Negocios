@@ -24,7 +24,7 @@ def test_vip_discount_200():
     # Arrange: Preparar un pedido de 200 para un cliente VIP
     o = Order(200, vip=True)
     # Act + Assert: Confirmar el pedido y verificar el descuento del 15% (170)
-    assert o.confirm() == 999
+    assert o.confirm() == 170
     assert o.status == "CONFIRMED"
 
 def test_regular_no_discount_200():
